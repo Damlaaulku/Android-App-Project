@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <ImageView
+        android:id="@+id/productImage2"
+        android:layout_width="129dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/head2"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="68dp"
+        android:background="#8800BCD4"
+        android:shadowColor="#FAEFEF"
+        android:text="Add a New Product"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/brandInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="Brand"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceInput"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/CampaignsSpinner"
+        android:layout_width="214dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="9dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategoriesSpinner"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/descInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Product Description"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/widthInput"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="Product price"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="11dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="X "
+        app:layout_constraintEnd_toStartOf="@+id/heightInput"
+        app:layout_constraintStart_toEndOf="@+id/widthInput"
+        app:layout_constraintTop_toBottomOf="@+id/brandInput"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/widthInput"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:ems="10"
+        android:hint="width"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandInput"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/CategoriesSpinner"
+        android:layout_width="214dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="12dp"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descInput"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="Product name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeInput"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:ems="10"
+        android:hint="height"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/brandInput"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="11dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="X "
+        app:layout_constraintEnd_toStartOf="@+id/depthInput"
+        app:layout_constraintStart_toEndOf="@+id/heightInput"
+        app:layout_constraintTop_toBottomOf="@+id/brandInput"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/depthInput"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:hint="depth"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/brandInput"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Product code"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImage2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="9dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CampaignsSpinner"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

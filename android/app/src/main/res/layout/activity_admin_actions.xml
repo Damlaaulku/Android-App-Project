@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActions">
+
+    <TextView
+        android:id="@+id/head4"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="92dp"
+        android:background="#EC6B61"
+        android:shadowColor="#FAEFEF"
+        android:text="Welcome!"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="70dp"
+        android:background="#FFFFFF"
+        android:text=" Which action would you like to take?"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/CampaignButton"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="21dp"
+        android:background="#8800BCD4"
+        android:text="Add a New CAMPAIGN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductButton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="25dp"
+        android:background="#8800BCD4"
+        android:text="Update Order Status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CampaignButton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ProductButton"
+        android:layout_width="164dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="64dp"
+        android:background="#8800BCD4"
+        android:text="Add a New Product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

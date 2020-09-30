@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.furkanenes.oop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddCampaignSuccess"></activity>
+        <activity android:name=".OrderUpdateSuccess" />
+        <activity android:name=".OrderDetail" />
+        <activity android:name=".OrderSuccess" />
+        <activity android:name=".Addresses" />
+        <activity android:name=".CreateOrder" />
+        <activity android:name=".UpdateOrderStatus" />
+        <activity android:name=".AdminActions" />
+        <activity android:name=".AddCampaign" />
+        <activity android:name=".AddProduct" />
+        <activity android:name=".Comments" />
+        <activity android:name=".ProductDetail" />
+        <activity android:name=".Search" />
+        <activity android:name=".CategoryDetail" />
+        <activity android:name=".Orders" />
+        <activity android:name=".Favorites" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Home" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
